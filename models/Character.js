@@ -14,7 +14,7 @@ Character.init(
         name: {
             type: DataTypes.STRING,
             allowNull: false,
-    },
+        },
         race: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -34,7 +34,14 @@ Character.init(
         equipment: {
             type: DataTypes.STRING,
             allowNull: false,
-        }
+        },
+        user_id: {
+          type: DataTypes.INTEGER,
+          references: {
+            model: 'character',
+            key: 'id',
+          },
+        },
 },{
     sequelize,
     timestamps: false,
