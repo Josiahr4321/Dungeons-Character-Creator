@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,28 @@
     <link rel="stylesheet" href="/css/jass.css">
 
 </head>
+
 <body>
-    
+
+    <header>
+        <h1>DND🐉</h1>
+    </header>
+
+    <nav>
+        <a href="/">Home</a>
+        {{#if loggedIn}}
+        <button id="logout" class="btn-no-style">Logout</button>
+        {{else}}
+        <a href="/login">Login</a>
+        {{/if}}
+    </nav>
+    <main>
+        
+        <div>
+            {{{body}}}
+        </div>
+    </main>
+
 </body>
+
 </html>
