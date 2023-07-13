@@ -38,7 +38,7 @@ Character.init(
         user_id: {
           type: DataTypes.INTEGER,
           references: {
-            model: 'character',
+            model: 'user',
             key: 'id',
           },
         },
