@@ -3,6 +3,8 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
+const path = require('path');
+
 
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -26,6 +28,7 @@ app.use(session(sess));
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -37,9 +40,9 @@ sequelize.sync({ force: false }).then(() => {
 });
 
 
-// Middleware
-// app.use(bodyParser.urlencoded({ extended: false }));
- //app.use(bodyParser.json());
+// // Middleware
+// // app.use(bodyParser.urlencoded({ extended: false }));
+//  //app.use(bodyParser.json());
 
 // Set up Handlebars as the template engine
 //  app.engine('handlebars', exphbs());
