@@ -1,3 +1,27 @@
 {{#each characters as |character|}}
 {{> characters}}
 {{/each}}
+
+<h1>Homepage</h1>
+
+<a href="/character-create" class="btn">Create a New Character</a>
+
+<h2>D&D Resource Links</h2>
+<ul>
+  <li><a href="https://www.dndbeyond.com/">D&D Beyond</a></li>
+  <li><a href="https://www.dnd5eapi.co/">D&D 5e API</a></li>
+  
+</ul>
+
+<h2>Your Characters</h2>
+<ul>
+<li>
+{{character.name}},
+{{character.race}},
+{{character.class}},
+{{character.allignment}},
+{{character.spells}},
+{{character.equipment}}
+</li>
+</ul>
+
