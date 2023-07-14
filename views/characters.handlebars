@@ -1,0 +1,26 @@
+<h1>Your Character</h1>
+
+{{#if character}}
+  <h2>{{character.name}}</h2>
+  <p><strong>Race:</strong> {{character.race}}</p>
+  <p><strong>Class:</strong> {{character.class}}</p>
+ <p><strong>Spells:</strong> {{character.spells}}</p>
+ <p><strong>Equipment:</strong> {{character.equipment}}</p>
+  
+{{else}}
+  <p>No character found.</p>
+{{/if}}
+
+<hr>
+
+<h1>Previously Saved Characters</h1>
+
+{{#if savedCharacters}}
+  <ul>
+    {{#each savedCharacters}}
+      <li>{{this.name}} ({{this.race}})</li>
+    {{/each}}
+  </ul>
+{{else}}
+  <p>No previously saved characters found.</p>
+{{/if}}
