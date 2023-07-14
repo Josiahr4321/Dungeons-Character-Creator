@@ -1,7 +1,23 @@
 const router = require('express').Router();
 const { Character } = require('../../models');
 
+router.get('/', async (req, res) => {
+  try {
+      const characterData = await  Character.findAll({
+          attributes: { exclude: ['user_id'] },
+          order: [['name', 'ASC']],
+      });
 
+      const characters = characterData.map((character) => character.get({ plain: true }));
+
+      res.render('homepage', {
+          characters,
+          logged_in: req.session.logged_in,
+      });
+  } catch (err) {
+      res.status(500).json(err);
+  }
+});
 
 router.post('/', async (req, res) => {
     try {

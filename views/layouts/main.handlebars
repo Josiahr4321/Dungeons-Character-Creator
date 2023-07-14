@@ -14,7 +14,7 @@
 <body>
 
     <header>
-        <h1 >DND🐉</h1>
+        <h1>DND🐉</h1>
     </header>
 
     <nav>
@@ -26,16 +26,12 @@
         {{/if}}
     </nav>
     <main>
-        {{!-- <div>
-            {{#if loggedIn}}
-            <section>
-                {{> characterCreate}}
-            </section>
-            </section>
-            {{else}}
-            <a href="/login">You must login first to view this page</a>
-            {{/if}}
-        </div> --}}
+
+        
+        <div>
+            {{{body}}}
+        </div>
+
     </main>
     {{#if loggedIn}}
   <script src="../../public/logout.js"></script>
