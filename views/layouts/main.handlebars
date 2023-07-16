@@ -17,7 +17,7 @@
         <h1 class="head">Dungeons and Dragons🐉</h1>
     </header>
 
-    <nav>
+    <nav id="nav">
         <a href="/">Home</a>
         {{#if loggedIn}}
         <button id="logout" class="btn-no-style">Logout</button>
@@ -25,10 +25,10 @@
         <a href="/login">Login</a>
         {{/if}}
     </nav>
-    <main>
+    <main class = "section">
 
         
-        <div>
+        <div class = "section" >
             {{{body}}}
         </div>
 
