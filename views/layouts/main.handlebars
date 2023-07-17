@@ -20,7 +20,7 @@
     <nav id="nav">
         <a href="/">Home</a>
         {{#if loggedIn}}
-        <button id="logout" class="btn-no-style">Logout</button>
+        <button id="logout" class="btn">Logout</button>
         {{else}}
         <a href="/login">Login</a>
         {{/if}}
@@ -28,7 +28,7 @@
     <main class = "section">
 
         
-        <div class = "section2" >
+        <div>
             {{{body}}}
         </div>
 
