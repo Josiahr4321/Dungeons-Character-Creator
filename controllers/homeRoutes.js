@@ -4,23 +4,16 @@ const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
   try {
-      const characterData = await  Character.findAll({
-          include: [
-            {
-              model: Character,
-              attributes: ['name', 'race','class', 'alignment', 'spells', 'equipment'],
-            },
-          ],
-      });
+    const characterData = await Character.findAll();
 
-      const characters = characterData.map((character) => character.get({ plain: true }));
+    const characters = characterData.map((character) => character.get({ plain: true }));
 
-      res.render('homepage', {
-          characters,
-          logged_in: req.session.logged_in,
-      });
+    res.render('homepage', {
+      characters,
+      loggedIn: req.session.loggedIn,
+    });
   } catch (err) {
-      res.status(500).json(err);
+    res.status(500).json(err);
   }
 });
 
@@ -87,7 +80,7 @@ router.delete('/character/:id', withAuth, async (req, res) => {
 });
 
 router.get('/login', (req, res) => {
-  if (req.session.logged_in) {
+  if (req.session.loggedIn) {
     res.redirect('/');
     return;
   }
