@@ -47,3 +47,7 @@ html{
     box-shadow: 10px 10px 45px rgb(0, 0, 0);
     background-repeat: no-repeat;
 }
+.btn{
+    background-color: black;
+    color: darkgoldenrod;
+}
