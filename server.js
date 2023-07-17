@@ -44,7 +44,7 @@ sequelize.sync({ force: false }).then(() => {
 // // app.use(bodyParser.urlencoded({ extended: false }));
 //  //app.use(bodyParser.json());
 
-// // Set up Handlebars as the template engine
+// Set up Handlebars as the template engine
 //  app.engine('handlebars', exphbs());
 //  app.set('view engine', 'handlebars');
 

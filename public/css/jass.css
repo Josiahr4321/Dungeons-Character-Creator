@@ -3,7 +3,7 @@ html{
     background-color: rgb(71, 3, 3);
     text-shadow: 2px 2px 10px white;
     font-family: 'Lugrasimo', cursive;
-    background-image: url("bgd.JPG");
+    background-image: url("../images/bgd.jpg");
 }
 
 .head{
