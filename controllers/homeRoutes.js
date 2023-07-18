@@ -46,7 +46,7 @@ router.get('/character/:id', withAuth, async (req, res) => {
 });
 
 
-router.post('/', async (req, res) => {
+router.post('/character', async (req, res) => {
   try {
     const newCharacter = await Character.create({
       ...req.body,
