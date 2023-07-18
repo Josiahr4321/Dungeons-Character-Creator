@@ -64,10 +64,10 @@ html{
     padding-right: 25px;
     border-radius: 25px;
     margin-bottom: 50px;
+    margin-top: 50px;
     background-image: url("../images/drag.png");
-    box-shadow: 10px 10px 25px rgb(0, 0, 0);
     background-size: cover;
-
+    border: 15px solid black;
 }
 .char{
     background-color: rgb(134, 192, 0);
