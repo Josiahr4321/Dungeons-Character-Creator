@@ -1,20 +1,20 @@
-<form action="/create-character" method="POST">
+<form  method="POST" class="character-create">
   <h2>Step 1: Choose Your Race</h2>
-  <select name="race">
+  <select id='name-create' name="race">
     {{#each races}}
       <option value="{{this}}">{{this}}</option>
     {{/each}}
   </select>
 
   <h2>Step 2: Choose Your Class</h2>
-  <select name="class">
+  <select id='race-create' name="class">
     {{#each classes}}
       <option value="{{this}}">{{this}}</option>
     {{/each}}
   </select>
 
    <h2>Step 3: Choose Your Spells</h2>
-  <select name="spell">
+  <select id='spells-create' name="spell">
     {{#each spells}}
       <option value="{{this}}">{{this}}</option>
     {{/each}}
