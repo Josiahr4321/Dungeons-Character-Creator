@@ -3,6 +3,31 @@
 </div>
 
 <div class="char">
-{{> characters}}
+    {{#if characters}}
+{{#each characters }}
+  <h2>{{name}}</h2>
+  <p><strong>Race:</strong> {{race}}</p>
+  <p><strong>Class:</strong> {{clas}}</p>
+ <p><strong>Spells:</strong> {{spells}}</p>
+ <p><strong>Equipment:</strong> {{equipment}}</p>
+  <p><strong>Alignment:</strong> {{alignment}}</p>
+
+ <button id="deleteCharacter" value="{{id}}">Delete Character</button>
+  {{/each}}
+  {{else}}
+  <p>No character found.</p>
+  {{/if}}
 </div>
+
+
+    <script src="js/delete.js"></script>
+
+h1>Homepage</h1>
+
+<a href="/character-create" class="btn">Create a New Character</a>
+
+<h2>D&D Resource Links</h2>
+<ul>
+  <li><a href="https://www.dndbeyond.com/">D&D Beyond</a></li>
+  <li><a href="https://www.dnd5eapi.co/">D&D 5e API</a></li>
 

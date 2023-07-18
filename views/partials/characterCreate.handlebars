@@ -1,22 +1,26 @@
-<form action="/create-character" method="POST">
+<form  method="POST" class="character-create">
+
+  <h2>Choose A Name</h2>
+  <input type="" class="name-create" name="name">
+  </select>
 
   <h2>Choose Your Race</h2>
-  <select name="race" id="race-dropdown">
+  <select class='race-create' name="race" id="race-dropdown">
   </select>
 
   <h2>Select Your Class</h2>
-  <select name="class" id="class-dropdown"></select>
+  <select class='class-create' name="class" id="class-dropdown"></select>
 
   <h2>Master Your Arcane Arts</h2>
-  <select name="spells" id="spells-dropdown"></select>
+  <select class='spells-create' name="spells" id="spells-dropdown"></select>
 
   <h2>Align Your Destiny</h2>
-  <select name="alignments" id="alignments-dropdown"></select>
+  <select class='alignment-create' name="alignments" id="alignments-dropdown"></select>
 
   <h2>Arm Yourself</h2>
-  <select name="equipments" id="equipments-dropdown"></select>
+  <select class='equipment-create' name="equipments" id="equipments-dropdown"></select>
   </select>
 
   <script src="/js/dropdown.js"></script>
-  <input class="btn" type="submit" value="Create Character">
+  <button class="btn" type="submit" value="Create Character">Create Character</button>
 </form>
