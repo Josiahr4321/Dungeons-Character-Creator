@@ -2,30 +2,28 @@
     {{> characterCreate}}
 </div>
 
-<div class="char">
+<div class="char container text-center">
+  <div class="row g-2">
     {{#if characters}}
-{{#each characters }}
-<div id="character-{{id}}">
-  <h2>{{name}}</h2>
-  <p><strong>Race:</strong> {{race}} <strong>Class:</strong> {{clas}} <strong>Spells:</strong> {{spells}} <strong>Equipment:</strong> {{equipment}} <strong>Alignment:</strong> {{alignment}}</p>
-  
- <button class="deleteCharacter  btn" value="{{id}}">Delete Character</button>
- </div>
-  {{/each}}
-  {{else}}
-  <p>No character found.</p>
-  {{/if}}
+      {{#each characters}}
+        <div id="character-{{id}}" class="col-6">
+          <h2>{{name}}</h2>
+          <p><strong>Race:</strong> {{race}}</p>
+          <p><strong>Class:</strong> {{clas}}</p>
+          <p><strong>Spells:</strong> {{spells}}</p>
+          <p><strong>Equipment:</strong> {{equipment}}</p>
+          <p><strong>Alignment:</strong> {{alignment}}</p>
+          <button class="deleteCharacter btn" value="{{id}}">Delete Character</button>
+        </div>
+      {{/each}}
+    {{else}}
+      <p>No character found.</p>
+    {{/if}}
+  </div>
 </div>
 
 
     <script src="js/delete.js"></script>
 
 
-{{!-- <div class="res">
-    <h2>D & D Resource Links</h2>
-    <ul>
-        <li></li>
-        <li></li>
-    </ul>
-</div> --}}
 
