@@ -1,10 +1,11 @@
-<div class="create">
+<div class="create offset-2 col-8">
     {{> characterCreate}}
 </div>
 
 <div class="char">
     {{#if characters}}
 {{#each characters }}
+<div id="character-{{id}}">
   <h2>{{name}}</h2>
   <p><strong>Race:</strong> {{race}}</p>
   <p><strong>Class:</strong> {{clas}}</p>
@@ -12,7 +13,8 @@
  <p><strong>Equipment:</strong> {{equipment}}</p>
   <p><strong>Alignment:</strong> {{alignment}}</p>
 
- <button id="deleteCharacter" value="{{id}}">Delete Character</button>
+ <button class="deleteCharacter" value="{{id}}">Delete Character</button>
+ </div>
   {{/each}}
   {{else}}
   <p>No character found.</p>
