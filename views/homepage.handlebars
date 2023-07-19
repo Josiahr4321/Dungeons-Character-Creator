@@ -7,12 +7,8 @@
 {{#each characters }}
 <div id="character-{{id}}">
   <h2>{{name}}</h2>
-  <p><strong>Race:</strong> {{race}}</p>
-  <p><strong>Class:</strong> {{clas}}</p>
- <p><strong>Spells:</strong> {{spells}}</p>
- <p><strong>Equipment:</strong> {{equipment}}</p>
-  <p><strong>Alignment:</strong> {{alignment}}</p>
-
+  <p><strong>Race:</strong> {{race}} <strong>Class:</strong> {{clas}} <strong>Spells:</strong> {{spells}} <strong>Equipment:</strong> {{equipment}} <strong>Alignment:</strong> {{alignment}}</p>
+  
  <button class="deleteCharacter  btn" value="{{id}}">Delete Character</button>
  </div>
   {{/each}}
@@ -25,11 +21,11 @@
     <script src="js/delete.js"></script>
 
 
-<div class="res">
+{{!-- <div class="res">
     <h2>D & D Resource Links</h2>
     <ul>
-        <li><a href="https://www.dndbeyond.com/">D & D Beyond</a></li>
-        <li><a href="https://www.dnd5eapi.co/">D & D 5e API</a></li>
+        <li></li>
+        <li></li>
     </ul>
-</div>
+</div> --}}
 
