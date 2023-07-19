@@ -4,7 +4,9 @@ const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
   try {
-    const characterData = await Character.findAll();
+    const characterData = await Character.findAll({
+      where: {user_id: req.session.user_id}
+    });
 
     const characters = characterData.map((character) => character.get({ plain: true }));
 

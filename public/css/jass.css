@@ -1,12 +1,18 @@
 html{
     color: rgb(0, 0, 0);
-    background-color: rgb(71, 3, 3);
     text-shadow: 2px 2px 10px white;
-    font-family: 'Lugrasimo', cursive;
-    background-image: url("../images/bgd.jpg");
-    background-position:initial
+    font-family: 'Lugrasimo', cursive;   
 }
+@media only screen and (max-width: 45em) {
+    html {
+      font-size: 62%;
+    }
+  }
 
+body {
+    background-image: url(../images/bgd.jpg);
+    background-size: cover;
+}
 .head{
     text-shadow: 5px 5px 15px red;
     color: rgb(66, 66, 66);
@@ -18,19 +24,19 @@ html{
 }
 
 #nav{
-    max-width: 600px;
+    /* max-width: 600px; */
     max-height: 250px;
-    min-width: 600px;
+    /* min-width: 600px; */
     min-height: 100px;
     font-size: 50px;
     text-align: center;
-    margin-right: 50px;
-    margin-left: 50px;
+    /* margin-right: 50px; */
+    /* margin-left: 50px; */
     background-color: rgb(11, 0, 71);
     border-radius: 25px;
     box-shadow: -10px -10px 45px rgb(255, 174, 0);
-    margin-left: 35%;
-    margin-right: 35%;
+    /* margin-left: 35%; */
+    /* margin-right: 35%; */
     padding-top: 10px;
     background-image: url("../images/img.jpg");
     text-shadow: 2px 2px 10px rgb(255, 180, 180);
@@ -41,11 +47,11 @@ html{
 .section{
     background-color: rgb(71, 3, 3);
     /* max-width: 520px; */
-    min-width: 500px;
+    /* min-width: 500px; */
     min-height: 300px;
     margin-top: 25px;
-    margin-left: 35%;
-    margin-right: 35%; 
+    /* margin-left: 35%; */
+    /* margin-right: 35%;  */
     padding-top: 4px;
     padding-bottom: 10px;
     padding-left: 100px;
@@ -67,8 +73,8 @@ html{
     text-align: right;
     text-shadow: 2px 2px 10px rgb(72, 250, 146);
     max-width: 75%;
-    margin-left: 25%;
-    margin-right: 25%; 
+    /* margin-left: 25%; */
+    /* margin-right: 25%;  */
     padding-right: 25px;
     border-radius: 25px;
     margin-bottom: 50px;
@@ -80,16 +86,11 @@ html{
 .char{
     background-color: rgb(134, 192, 0);
     color: rgb(226, 195, 255);
-    padding-top: 20px;
-    padding-bottom: 20px;
     text-shadow: 2px 2px 10px rgb(99, 0, 138);
-    padding-left: 60px;
     font-size: 25px;
     background-image: url("../images/skull.jpg");
     background-size: 100%;
-    width: 100%;
-    border-top: 8px solid black;
-    border-bottom: 8px solid black;
+    /* width: 100%; */
 }
 .res{
     background-color: brown; 

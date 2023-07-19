@@ -1,30 +1,30 @@
-<div class="create">
+<div class="create offset-2 col-8">
     {{> characterCreate}}
 </div>
 
-<div class="char">
+<div class="char container text-center">
+  <div class="row g-2">
     {{#if characters}}
-{{#each characters }}
-  <h2>{{name}}</h2>
-  <p><strong>Race:</strong> {{race}}</p>
-  <p><strong>Class:</strong> {{clas}}</p>
- <p><strong>Spells:</strong> {{spells}}</p>
- <p><strong>Equipment:</strong> {{equipment}}</p>
-  <p><strong>Alignment:</strong> {{alignment}}</p>
-
- <button class="btn" id="deleteCharacter" value="{{id}}">Delete Character</button>
-  {{/each}}
-  {{else}}
-  <p>No character found.</p>
-  {{/if}}
+      {{#each characters}}
+        <div id="character-{{id}}" class="col-6">
+          <h2>{{name}}</h2>
+          <p><strong>Race:</strong> {{race}}</p>
+          <p><strong>Class:</strong> {{clas}}</p>
+          <p><strong>Spells:</strong> {{spells}}</p>
+          <p><strong>Equipment:</strong> {{equipment}}</p>
+          <p><strong>Alignment:</strong> {{alignment}}</p>
+          <button class="deleteCharacter btn" value="{{id}}">Delete Character</button>
+        </div>
+      {{/each}}
+    {{else}}
+      <p>No character found.</p>
+    {{/if}}
+  </div>
 </div>
 
 
     <script src="js/delete.js"></script>
 
-<h1>Homepage</h1>
-
-<a href="/character-create" class="btn">Create a New Character</a>
 
 <div class="res">
     <h2>D & D Resource Links</h2>
