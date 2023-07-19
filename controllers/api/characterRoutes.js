@@ -6,6 +6,7 @@ router.get('/', async (req, res) => {
       const characterData = await  Character.findAll({
           attributes: { exclude: ['user_id'] },
           order: [['name', 'ASC']],
+          where: {user_id: req.session.user_id}
       });
 
       const characters = characterData.map((character) => character.get({ plain: true }));
@@ -33,6 +34,7 @@ router.post('/', async (req, res) => {
   });
   
   router.delete('/:id', async (req, res) => {
+    console.log(req.params.id, req.session.user_id)
     try {
       console.log(req.params.id)
       const characterData = await Character.destroy({
