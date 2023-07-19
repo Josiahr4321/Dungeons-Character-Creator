@@ -1,7 +1,8 @@
 const deleteCharacterFormHandler = async (event) => {
+    
+  if(event.target.matches(".deleteCharacter")){
     event.preventDefault();
-  
-const characterId = document.querySelector("#deleteCharacter").value
+    const characterId = event.target.getAttribute('value')
     
     if (characterId) {
       const response = await fetch(`/api/characters/${characterId}`, {
@@ -10,13 +11,14 @@ const characterId = document.querySelector("#deleteCharacter").value
       });
       console.log(response)
       if (response.ok) {
-        document.location.replace('/');
+        document.getElementById(`character-${characterId}`).remove()
       } else {
         alert('Failed to delete character.');
       }
     }
+  }
+
   };
 
-  document
-  .querySelector('#deleteCharacter')
-  .addEventListener('click', deleteCharacterFormHandler);
+  document.body.addEventListener('click', deleteCharacterFormHandler);
+ 
