@@ -60,11 +60,11 @@ body {
 }
 .create{
     background-color: rgb(47, 121, 134);
-    color: rgb(27, 20, 0);
+    color: rgb(105, 220, 255);
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: right;
-    text-shadow: 2px 2px 10px rgb(72, 250, 146);
+    text-shadow: -5px 5px 10px rgb(0, 218, 152);
     max-width: 75%;
     padding-right: 25px;
     border-radius: 25px;
@@ -73,16 +73,23 @@ body {
     background-image: url("../images/drag.png");
     background-size: cover;
     border: 15px solid black;
-}
-.char{
+    font-family: 'Lugrasimo', cursive;}
+#char{
     background-color: rgb(134, 192, 0);
     color: rgb(226, 195, 255);
     text-shadow: 2px 2px 10px rgb(99, 0, 138);
-    font-size: 25px;
+    font-size: 35px;
     background-image: url("../images/skull.jpg");
     background-size: 100%;
+    font-family: 'Kaushan Script', cursive;
+    border-top: 8px solid black;
+    border-bottom: 8px solid black;
+    min-width: 100%; 
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+
 }
-.res{
+/* .res{
     background-color: brown; 
     background-image: url("../images/img.jpg");
     background-size: 100%;
@@ -94,4 +101,14 @@ body {
     font-size: 20px;
     color: rgb(92, 112, 0);
     text-shadow: 2px 2px 10px rgb(255, 180, 180);
+} */
+#ddl{
+    background-color: rgb(97, 9, 63);
+    color: rgb(86, 60, 255);
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 20px;
+    text-shadow: 5px 5px 15px rgb(255, 149, 229);
+}
+.idk{
+    padding-top: 10px;
 }
