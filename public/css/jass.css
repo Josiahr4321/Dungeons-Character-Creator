@@ -24,36 +24,30 @@ body {
 }
 
 #nav{
-    /* max-width: 600px; */
     max-height: 250px;
-    /* min-width: 600px; */
     min-height: 100px;
     font-size: 50px;
     text-align: center;
-    /* margin-right: 50px; */
-    /* margin-left: 50px; */
+    background-color: rgb(11, 0, 71);
     background-image: url("../images/img.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 25px;
     box-shadow: -10px -10px 45px rgb(255, 174, 0);
-    /* margin-left: 35%; */
-    /* margin-right: 35%; */
     padding-top: 10px;
+    border: 8px solid black;
+    background-size: 100%;
+    background-image: url("../images/img.jpg");
+    text-shadow: 2px 2px 10px rgb(255, 180, 180);
     border: 8px solid black;
     background-size: 100%;
 }
 .section{
     background-color: rgb(71, 3, 3);
-    /* max-width: 520px; */
-    /* min-width: 500px; */
     min-height: 300px;
     margin-top: 25px;
-    /* margin-left: 35%; */
-    /* margin-right: 35%;  */
     padding-top: 4px;
     padding-bottom: 10px;
-    /* padding-left: 100px; */
     border-radius: 25px;
     box-shadow: 10px 10px 45px rgb(0, 0, 0);
     background-repeat: no-repeat;
@@ -66,14 +60,12 @@ body {
 }
 .create{
     background-color: rgb(47, 121, 134);
-    color: rgb(27, 20, 0);
+    color: rgb(105, 220, 255);
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: right;
-    text-shadow: 2px 2px 10px rgb(72, 250, 146);
+    text-shadow: -5px 5px 10px rgb(0, 218, 152);
     max-width: 75%;
-    /* margin-left: 25%; */
-    /* margin-right: 25%;  */
     padding-right: 25px;
     border-radius: 25px;
     margin-bottom: 50px;
@@ -81,20 +73,25 @@ body {
     background-image: url("../images/drag.png");
     background-size: cover;
     border: 15px solid black;
-}
-.char{
+    font-family: 'Lugrasimo', cursive;}
+#char{
     background-color: rgb(134, 192, 0);
     color: rgb(226, 195, 255);
     text-shadow: 2px 2px 10px rgb(99, 0, 138);
-    font-size: 25px;
+    font-size: 35px;
     background-image: url("../images/skull.jpg");
     background-size: 100%;
-    /* width: 100%; */
+    font-family: 'Kaushan Script', cursive;
+    border-top: 8px solid black;
+    border-bottom: 8px solid black;
+    min-width: 100%; 
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+
 }
-.res{
+/* .res{
     background-color: brown; 
     background-image: url("../images/img.jpg");
-    /* background-position: 100%; */
     background-size: 100%;
     border: 8px solid black;
     max-width: fit-content;
@@ -104,4 +101,14 @@ body {
     font-size: 20px;
     color: rgb(92, 112, 0);
     text-shadow: 2px 2px 10px rgb(255, 180, 180);
+} */
+#ddl{
+    background-color: rgb(97, 9, 63);
+    color: rgb(86, 60, 255);
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 20px;
+    text-shadow: 5px 5px 15px rgb(255, 149, 229);
+}
+.idk{
+    padding-top: 10px;
 }
