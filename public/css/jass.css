@@ -32,12 +32,16 @@ body {
     text-align: center;
     /* margin-right: 50px; */
     /* margin-left: 50px; */
-    background-color: rgb(11, 0, 71);
+    background-image: url("../images/img.jpg");
+    background-size: cover;
+    background-position: center;
     border-radius: 25px;
     box-shadow: -10px -10px 45px rgb(255, 174, 0);
     /* margin-left: 35%; */
     /* margin-right: 35%; */
     padding-top: 10px;
+    border: 8px solid black;
+    background-size: 100%;
 }
 .section{
     background-color: rgb(71, 3, 3);
@@ -49,7 +53,7 @@ body {
     /* margin-right: 35%;  */
     padding-top: 4px;
     padding-bottom: 10px;
-    padding-left: 100px;
+    /* padding-left: 100px; */
     border-radius: 25px;
     box-shadow: 10px 10px 45px rgb(0, 0, 0);
     background-repeat: no-repeat;
