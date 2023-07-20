@@ -23,6 +23,12 @@ body {
 
 }
 
+.character-container {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 30px;
+  }
+  
+
 #nav{
     max-height: 250px;
     min-height: 100px;
@@ -89,19 +95,7 @@ body {
     padding-bottom: 10px ;
 
 }
-/* .res{
-    background-color: brown; 
-    background-image: url("../images/img.jpg");
-    background-size: 100%;
-    border: 8px solid black;
-    max-width: fit-content;
-    margin-top: 35px;
-    padding: 15px 15px 15px 15px;
-    border-radius: 25px;
-    font-size: 20px;
-    color: rgb(92, 112, 0);
-    text-shadow: 2px 2px 10px rgb(255, 180, 180);
-} */
+
 #ddl{
     background-color: rgb(97, 9, 63);
     color: rgb(86, 60, 255);

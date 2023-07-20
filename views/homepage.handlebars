@@ -2,17 +2,22 @@
     {{> characterCreate}}
 </div>
 
-<div id="char"class="container text-left">
+<div id="char" class="container text-left">
   <div class="row g-2">
     {{#if characters}}
       {{#each characters}}
-        <div id="character-{{id}}" class="col-6">
-          <h2>{{name}}</h2>
-          <p><strong>Race:</strong> {{race}}</p>
-          <p><strong>Class:</strong> {{clas}}</p>
-          <p><strong>Spells:</strong> {{spells}}</p>
-          <p><strong>Equipment:</strong> {{equipment}}</p>
-          <p><strong>Alignment:</strong> {{alignment}}</p>
+        <div id="character-{{id}}" class="col-6 character-container">
+          <div class="character-details">
+            <div><strong>Name:</strong> {{name}}</div>
+            <div><strong>Race:</strong> {{race}}</div>
+            <div><strong>Class:</strong> {{clas}}</div>
+            <div><strong>Spells:</strong> {{spells}}</div>
+            <div><strong>Equipment:</strong> {{equipment}}</div>
+            <div><strong>Alignment:</strong> {{alignment}}</div>
+          </div>
+          <div class="class-image-container">
+            <img src="{{getImagePath clas}}" alt="{{clas}}" class="class-image" width="300" height="300">
+          </div>
           <button class="deleteCharacter btn" value="{{id}}">Delete Character</button>
         </div>
       {{/each}}
@@ -21,6 +26,10 @@
     {{/if}}
   </div>
 </div>
+
+
+
+
 
 
     <script src="js/delete.js"></script>
