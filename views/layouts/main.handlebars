@@ -23,13 +23,27 @@
         <h1 class="head">Dungeons and Dragons🐉</h1>
     </header>
 
+
+
+
     <nav id="nav" class="offset-3 col-5">
         <div class="dropdown">
+
             <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Resource Links
             </a>
 
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://www.dndbeyond.com/">D & D Beyond</a></li>
+                <li><a class="dropdown-item" href="https://top.gg/servers/tag/dnd">D & D Discord Servers</a></li>
+                <li><a class="dropdown-item" href="https://media.wizards.com/2018/dnd/downloads/DnD_BasicRules_2018.pdf">D & D Basic Rules</a></li>
+                <li><a class="dropdown-item" href="https://www.dndbeyond.com/posts/1452-how-to-be-a-dungeon-master">How to be A Dungeon Master</a></li>
+                <li><a class="dropdown-item" href="https://www.dndbeyond.com/posts/1026-common-terms-new-dungeons-dragons-players-should">D & D Dictionary</a></li>
+                <li><a class="dropdown-item" href="https://www.dndbeyond.com/how-to-play-dnd">How to Play D & D</a></li>
+            </ul>
+        </div>
+</div>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="https://www.dndbeyond.com/">Action</a></li>
                 <li><a class="dropdown-item" href="https://www.dnd5eapi.com/">Another action</a></li>
@@ -45,12 +59,13 @@
 
 
         <div>
+            
             {{{body}}}
         </div>
 
     </main>
     {{#if loggedIn}}
-
+    
     <script src="js/createCharacter.js"></script>
     <script src="js/logout.js"></script>
     {{else}}
@@ -66,9 +81,13 @@
 
 
 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+
 </body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
